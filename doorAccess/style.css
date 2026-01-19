@@ -1,0 +1,134 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    height: 100vh;                  
+}
+.sectionleft {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;
+}
+.sectionright {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;
+}
+
+.sectionright .tform {
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tform h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.tform label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.sectionright form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; 
+}
+
+.tform input[type="text"],
+.tform input[type="number"] {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border 0.3s;
+}
+
+.tform input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.rules {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.rules label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.tform button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tform button:hover {
+    background-color: #3730a3;
+}
+
+.sectionleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.sectionleft h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.sectionleft p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
