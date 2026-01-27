@@ -1,0 +1,362 @@
+/* styless index */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url();
+}
+.main-container {
+    background: linear-gradient(#000000 5%, transparent 90%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background: transparent;
+
+}
+
+.logo  {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+
+}
+
+.nav-login {
+    display: inline-block;        
+    padding: 10px 20px;           
+    background-color: #e50914;    
+    color: white;                 
+    text-decoration: none;        
+    border-radius: 6px;           
+    font-weight: bold;
+}
+
+.title-central {
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+}
+
+.h2-central {
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.p-center {
+    font-size: 24px;
+    margin-top: 20px;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#email-form {
+    margin-top: 30px;
+}
+
+#email-form input {
+    width: 400px;
+    padding: 10px 16px;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+#email-form button {
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #e50914; 
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-section {
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h2-central {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#login-form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+#login-form input {
+    padding: 12px;
+    font-size: 15px;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+    outline: none;
+    }
+
+    #login-form input:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.3);
+}
+
+#login-form button {
+    margin-top: 12px;
+    padding: 14px;
+
+    background-color: #e50914;
+    color: #fff;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    #login-form button:hover {
+    background-color: #b20710;
+    transform: translateY(-2px);
+}
+
+.card {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    }
+
+    .hidden {
+    display: none;
+    }
+
+#result {
+    font-size: 16px;
+    color: #fe0000;
+}
+
+/* css habits.html */
+.habit-section {
+    background-color: #fffefe;
+    padding: 10px; 
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 50%;        
+    max-width: 400px;  
+    margin: 20px auto; 
+}
+
+
+#habit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.h2r-central {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+
+#habit-form input,
+#habit-form select {
+    display: block;
+    width: 50%;
+}
+
+#habit-form input::placeholder {
+    color: #000000;
+}
+
+#habit-form input,
+#habit-form select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    margin-top: 5px; 
+}
+
+/* Botón */
+#habit-form button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4f46e5;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#habit-form button:hover {
+    background-color: #4338ca;
+}
+
+#habits-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#habits-list li {
+    background: white;
+    border: 1px solid #eee;
+    border-left: 4px solid var(--clickup-purple); 
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#habits-list li:hover {
+    transform: translateX(2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#habits-list h6 {
+    font-size: 70px;
+}
+
+#habits-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.task-card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin: 30px auto;
+}
+
+.habit-list-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+#habits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.habit-card {
+    background: #f7f7f7;
+    padding: 14px 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.habit-card h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.habit-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #555;
+
+}
+
+.habit-card.low {
+    border-left: 6px solid #2ecc71;
+}
+
+.habit-card.medium {
+    border-left: 6px solid #f39c12;
+}
+
+.habit-card.high {
+    border-left: 6px solid #e74c3c;
+}
+
+.status {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status.pending {
+    color: #d97706; 
+}
+
+.status.done {
+    color: #16a34a; 
+}
