@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@mail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "3117",
+      "name": "Anderson Guzman",
+      "email": "and.guz8a@gmail.com",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Classic Beef Burger",
+      "price": 8.99,
+      "category": "burgers",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+    },
+    {
+      "id": "2",
+      "name": "Golden Fries",
+      "price": 3.99,
+      "category": "sides",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+    }
+  ],
+  "orders": [
+    {
+      "id": "7105",
+      "userId": "3117",
+      "products": [
+        {
+          "id": "2",
+          "name": "Golden Fries",
+          "price": 3.99,
+          "qty": 4
+        }
+      ],
+      "date": "2026-02-02T12:04:29.929Z"
+    }
+  ]
+}
